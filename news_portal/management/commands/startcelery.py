@@ -15,7 +15,7 @@ class Command(BaseCommand):
         try:
             # Ожидание завершения процессов
             beat_process.wait()
-            #worker_process.wait()
+            worker_process.wait()
         except KeyboardInterrupt:
             # Обработка сигнала прерывания (Ctrl+C)
             beat_process.terminate()
